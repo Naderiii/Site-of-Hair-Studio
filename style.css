@@ -181,6 +181,7 @@ padding: 70px 0;
     width: 100%;
     padding: 60px 0;
     background: #efefef;
+    margin-bottom: 60px;
 }
 
 .service-box{
@@ -243,3 +244,88 @@ hr{
 .single-service p{
     font-size: 14px;
 }
+
+/* -- testimonial -- */
+.testimonial{
+    width: 100%;
+    padding: 50px 0;
+}
+
+.testimonial-row{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: self-start;
+    flex-wrap: wrap;
+}
+.testimonial-col{
+    flex-basis: 28%;
+    padding: 10px; 
+    margin-bottom: 60px;
+    border-radius: 5px;
+    box-shadow: 0 20px 30px 5px #00968814;
+    transition: 0.5s;
+    max-height:max-content;
+}
+.testimonial-col p{
+    font-size: 14px;
+}
+.user{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.user img{
+    width:50px;
+    height:55px;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+.testimonial-col:hover{
+    transform: translateY(-7px);
+}
+
+/* -- footer -- */
+#footer{
+    padding: 60px 20px 0;
+    background: #efefef;
+}
+
+.footer-row{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-right{
+    flex-basis: 45%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.footer-right{
+    text-align: right;
+}
+.footer-row h1{
+    margin: 10px 0;
+}
+.footer-row p{
+    line-height: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

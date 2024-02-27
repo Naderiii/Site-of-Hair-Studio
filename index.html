@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <title>Hair studio</title>
 </head>
 <body>
@@ -25,11 +26,11 @@
     <div id="sideNav">
         <nav>
             <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">FEATURES</a></li>
-                <li><a href="#">SERVICES</a></li>
-                <li><a href="#">TESTIMONIALS</a></li>
-                <li><a href="#">MEET US</a></li>
+                <li><a href="#banner">HOME</a></li>
+                <li><a href="#Feature">FEATURES</a></li>
+                <li><a href="#service">SERVICES</a></li>
+                <li><a href="#testimonial">TESTIMONIALS</a></li>
+                <li><a href="#footer">MEET US</a></li>
 
             </ul>
         </nav>
@@ -108,10 +109,64 @@
     </section>
 
     <!-- testimonial -->
-    <section id="">
-
+    <section id="testimonial">
+        <div class="title-text">
+            <p>TESTIMONIAL</p>
+            <h1>Our clients say</h1>
+        </div>
+        <div class="testimonial-row">
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="Images/user1.jpg" alt="user1">
+                    <div class="user-info">
+                        <h4>Jhon</h4>
+                    </div>
+                </div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsam odit quaerat dolorem doloremque, aperiam commodi porro blanditiis nihil optio odio. Minima iste suscipit tenetur animi itaque reiciendis saepe aut aspernatur.</p>
+            </div>
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="Images/user2.jpg" alt="user2">
+                    <div class="user-info">
+                        <h4>Diana</h4>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti aperiam eveniet a ab. Eligendi accusantium pariatur ipsum excepturi voluptatibus accusamus odit natus a minima? Reprehenderit eaque officia nobis cumque ut.</p>
+            </div>
+            <div class="testimonial-col">
+                <div class="user">
+                    <img src="Images/user3.jpg" alt="user3">
+                    <div class="user-info">
+                        <h4>Daniel</h4>
+                    </div>
+                </div>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quos ex exercitationem deleniti obcaecati, provident perspiciatis ea quia, maxime sed expedita, asperiores commodi. Asperiores quibusdam quos ipsum accusamus distinctio quisquam soluta.</p>
+            </div>
+        </div>
     </section>
 
+    <!-- footer -->
+    <section id="footer">
+        <div class="title-text">
+            <p>CONTACT US</p>
+            <h1>VIsit Shop Today</h1>
+        </div>
+        <div class="footer-row">
+            <div class= "footer-left">
+                <h1>Opening Hours</h1>
+                <p>Monday to Friday - 9 AM to 6 PM</p>
+                <p>Saturday - 9 AM to 11 PM</p>
+            </div>
+            <div class="footer-right">
+                <h1>Getting Touch</h1>
+                <p>naderi.h.72@gmail.com</p>
+                <p>#36, Via Roma, Mila</p>
+                <p>+98 9036820367</p>
+
+            </div>
+        </div>
+        
+    </section>
 
     <script>
         var menuBtn = document.getElementById("menuBtn")
@@ -129,6 +184,10 @@
                 menu.src = "Images/icon-menu.png";
             }
         }
+        var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
 
     </script>
 </body>
