@@ -36,20 +36,97 @@
     </div>
 
     <div id="menuBtn">
-        <img src="Images/icons8-menu-50.png" id="menu">
+        <img src="Images/icon-menu.png" id="menu">
     </div>
+
+    <!-- Features -->
+    <section id="Feature">
+        <div class="title-text">
+            <p>FEATURES</p>
+            <h1>Why choose Us</h1>
+        </div>
+        <div class="feature-box">
+            <div class="features">
+                <h1>Experienced Staff</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam tenetur vel praesentium totam quibusdam aliquid, itaque facilis, veritatis omnis labore ipsam eum voluptatem consectetur. Accusantium aperiam omnis molestias consectetur optio!</p>
+            </div>
+
+            <div class="features-img">
+                <img src="Images/beauty1.jpg" alt="beauty">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section id="service">
+        <div class="title-text">
+            <p>SERVICES</p>
+            <h1>We Provide Better</h1>
+        </div>
+
+        <div>
+            <div class="service-box">
+                <div class="single-service">
+                    <img src="Images/pic1.jpg" alt="pic1">
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h1>Hair styling</h1>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ex quia. Fugit, aspernatur minima? Ex blanditiis quos illum pariatur natus officiis praesentium fuga totam? Quasi voluptate dolorem voluptatibus omnis in.</p>
+                    </div>
+                </div>
+                <div class="single-service">
+                    <img src="Images/pic2.jpg" alt="pic2">
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h1>Hair styling</h1>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ex quia. Fugit, aspernatur minima? Ex blanditiis quos illum pariatur natus officiis praesentium fuga totam? Quasi voluptate dolorem voluptatibus omnis in.</p>
+                    </div>
+                </div>
+                <div class="single-service">
+                    <img src="Images/pic3.jpg" alt="pic3">
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h1>Hair styling</h1>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ex quia. Fugit, aspernatur minima? Ex blanditiis quos illum pariatur natus officiis praesentium fuga totam? Quasi voluptate dolorem voluptatibus omnis in.</p>
+                    </div>
+                </div>
+                <div class="single-service">
+                    <img src="Images/pic4.jpg" alt="pic4">
+                    <div class="overlay"></div>
+                    <div class="service-desc">
+                        <h1>Hair styling</h1>
+                        <hr>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, ex quia. Fugit, aspernatur minima? Ex blanditiis quos illum pariatur natus officiis praesentium fuga totam? Quasi voluptate dolorem voluptatibus omnis in.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- testimonial -->
+    <section id="">
+
+    </section>
+
 
     <script>
         var menuBtn = document.getElementById("menuBtn")
         var menu = document.getElementById("menu")
         var sideNav = document.getElementById("sideNav")
 
+        sideNav.style.right = "-200px"
         menuBtn.onclick = function(){
             if(sideNav.style.right == "-200px"){
                 sideNav.style.right = "0"
+                menu.src = "Images/close_icon.png";
             }
             else{
                 sideNav.style.right = "-200px"
+                menu.src = "Images/icon-menu.png";
             }
         }
 
